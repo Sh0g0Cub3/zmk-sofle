@@ -38,6 +38,50 @@
     behaviors {
     };
 
+    macros {
+        code_block: code_block {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp GRAVE &kp GRAVE &kp GRAVE>;
+            label = "CODE_BLOCK";
+        };
+
+        parentheses: parentheses {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LPAR &kp RPAR &kp LEFT_ARROW>;
+            label = "PARENTHESES";
+        };
+
+        square_brackets: square_brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            label = "SQUARE_BRACKETS";
+        };
+
+        curly_braces: curly_braces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LS(LEFT_BRACE) &kp LS(RIGHT_BRACKET) &kp LEFT_ARROW>;
+            label = "CURLY_BRACES";
+        };
+
+        at_mark: at_mark {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp AT_SIGN>;
+            label = "AT_MARK";
+        };
+
+        corner_brackets: corner_brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp ENTER &kp LEFT_ARROW>;
+            label = "CORNER_BRACKETS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
