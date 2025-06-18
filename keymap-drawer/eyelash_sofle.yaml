@@ -60,7 +60,7 @@ layers:
   - '5'
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
-  - {t: 'Ctl+$$mdi:keyboard-space$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
+  - {t: 'Ctl+$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '3'
   - Gui+$$mdi:keyboard-space$$
