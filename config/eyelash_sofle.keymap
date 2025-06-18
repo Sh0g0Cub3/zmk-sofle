@@ -104,10 +104,10 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            display-name = "Default";
         };
 
-        layer_3 {
+        Arrow {
             bindings = <
 &trans            &kp F1  &kp F2                    &kp F3             &kp F4                     &kp F5    &none  &kp F6          &kp F7          &kp F8        &kp F9           &kp F10  &trans
 &trans            &none   &none                     &none              &none                      &none     &none  &kp F11         &kp F12         &none         &none            &none    &trans
@@ -119,7 +119,7 @@
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
         };
 
-        layer_4 {
+        Symbol {
             bindings = <
 &trans       &trans  &trans  &trans     &trans       &trans             &mmv MOVE_UP     &trans            &trans            &trans  &trans  &trans  &trans
 &trans       &none   &none   &kp HASH   &at_mark     &kp EXCLAMATION    &mmv MOVE_DOWN   &parentheses      &none             &none   &none   &none   &trans
