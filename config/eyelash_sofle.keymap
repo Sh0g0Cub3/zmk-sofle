@@ -96,11 +96,11 @@
 
         layer0 {
             bindings = <
-&kp ESC           &kp N1        &kp N2        &kp N3  &kp N4  &kp N5       &kp UP_ARROW     &kp N6                    &kp N7     &kp N8     &kp N9         &kp N0         &kp GRAVE
-&kp TAB           &kp Q         &kp W         &kp E   &kp R   &kp T        &kp DOWN_ARROW   &kp Y                     &kp U      &kp I      &kp O          &kp P          &kp BSLH
-&kp LEFT_CONTROL  &kp A         &kp S         &kp D   &kp F   &kp G        &kp LEFT_ARROW   &kp H                     &kp J      &kp K      &kp L          &kp SEMI       &kp APOS
-&kp LSHFT         &kp Z         &kp X         &kp C   &kp V   &kp B        &kp RIGHT_ARROW  &kp N                     &kp M      &kp COMMA  &kp DOT        &kp FSLH       &kp BACKSPACE
-&kp C_MUTE        &kp LEFT_ALT  &kp LEFT_GUI  &mo 2   &mo 3   &kp SPACE    &mkp LCLK        &mt LEFT_SHIFT LC(SPACE)  &kp ENTER  &mo 1      &kp LG(SPACE)  &kp LA(SPACE)
+&kp ESC           &kp N1        &kp N2        &kp N3  &kp N4  &kp N5       &kp UP_ARROW     &kp N6                    &kp N7     &kp N8     &kp N9           &kp N0         &kp GRAVE
+&kp TAB           &kp Q         &kp W         &kp E   &kp R   &kp T        &kp DOWN_ARROW   &kp Y                     &kp U      &kp I      &kp O            &kp P          &kp BSLH
+&kp LEFT_CONTROL  &kp A         &kp S         &kp D   &kp F   &kp G        &kp LEFT_ARROW   &kp H                     &kp J      &kp K      &kp L            &kp SEMI       &kp APOS
+&kp LSHFT         &kp Z         &kp X         &kp C   &kp V   &kp B        &kp RIGHT_ARROW  &kp N                     &kp M      &kp COMMA  &kp DOT          &kp FSLH       &kp BACKSPACE
+&kp C_MUTE        &kp LEFT_ALT  &kp LEFT_GUI  &mo 2   &mo 3   &kp SPACE    &mkp LCLK        &mt LEFT_SHIFT LC(SPACE)  &kp ENTER  &mo 1      &lt 4 LG(SPACE)  &kp LA(SPACE)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -129,13 +129,23 @@
             >;
         };
 
-        layer_5 {
+        Display {
             bindings = <
 &trans  &trans         &trans             &trans             &trans             &trans               &kp LA(K)  &trans                  &trans              &trans         &trans                   &trans  &trans
 &trans  &kp LA(LC(G))  &kp LA(LC(N))      &kp LA(LC(C))      &kp LA(LC(E))      &kp LA(LC(M))        &kp LA(J)  &kp LC(UP_ARROW)        &kp LC(LG(U))       &kp LC(LG(I))  &none                    &none   &trans
 &trans  &kp LA(LC(A))  &kp LA(LC(T))      &kp LA(LC(S))      &kp LA(LC(B))      &kp LA(LC(F))        &kp LA(H)  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(J))       &kp LC(LG(K))  &kp LC(LG(RIGHT_ARROW))  &none   &trans
 &trans  &none          &kp LS(LA(LC(F)))  &kp LS(LA(LC(S)))  &kp LS(LA(LC(P)))  &kp LS(LA(LC(D)))    &kp LA(L)  &kp LC(LG(COMMA))       &kp LC(LG(PERIOD))  &none          &none                    &none   &trans
 &trans  &trans         &trans             &trans             &trans             &trans               &trans     &trans                  &kp LC(LG(ENTER))   &trans         &trans                   &trans
+            >;
+        };
+
+        Function {
+            bindings = <
+&none  &none          &none          &none          &none          &none                &none  &none  &none  &none  &none  &none  &none
+&none  &kp LC(LG(P))  &none          &none          &none          &none                &none  &none  &none  &none  &none  &none  &none
+&none  &none          &kp LC(LG(S))  &none          &kp LC(LG(F))  &none                &none  &none  &none  &none  &none  &none  &none
+&none  &none          &none          &kp LC(LG(C))  &kp LC(LG(V))  &kp LC(LG(B))        &none  &none  &none  &none  &none  &none  &none
+&none  &none          &none          &none          &none          &kp LS(LC(LG(B)))    &none  &none  &none  &none  &none  &none
             >;
         };
 
