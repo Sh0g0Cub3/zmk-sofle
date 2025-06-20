@@ -56,7 +56,7 @@ layers:
   - Gui+1
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - {t: 'Alt+$$mdi:keyboard-space$$', h: Symbol}
+  - Symbol
   - {t: 'Gui+$$mdi:keyboard-space$$', h: Function}
   - {t: '$$mdi:keyboard-space$$', h: Display}
   - $$mdi:mouse-left-click-outline$$
