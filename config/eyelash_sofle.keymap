@@ -103,7 +103,7 @@
 &kp LG(NUMBER_1)  &kp LEFT_ALT  &kp LEFT_GUI  &lt 2 LA(SPACE)  &lt 4 LG(SPACE)  &lt 3 SPACE    &mkp LCLK        &mt LEFT_SHIFT ENTER  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
             >;
 
-            sensor-bindings = <&inc_dec_kp LA(LG(LEFT_ARROW)) LA(LG(RIGHT_ARROW))>;
+            sensor-bindings = <&inc_dec_kp LA(LG(RIGHT_ARROW)) LA(LG(LEFT_ARROW))>;
             display-name = "Default";
         };
 
